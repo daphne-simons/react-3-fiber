@@ -1,21 +1,17 @@
 import { Suspense } from 'react'
-import './App.css'
 import { Canvas } from '@react-three/fiber'
-import { Html } from '@react-three/drei'
-import {Three} from './components/Three'
+import './App.css'
+import Three from './components/Three'
+
 function App() {
-
-
   return (
-    <>
-      <Canvas className="canvas">
+      <Canvas id="threeCanvasContainer">
         <Suspense fallback={null}> 
         {/* suspense allows you to give some kind of element while page loads.  */}
          {/*Components go here*/}
+         <Three/>
         </Suspense>
       </Canvas>
-       
-    </>
   )
 }
 

@@ -1,6 +1,7 @@
-.canvas {
- width: 80%;
- height: 80%;
- padding: 10%;
- background-color: blue;
+body {
+  background-color: #000000;
+}
+
+#threeCanvasContainer {
+  height: 100vh !important;
 }
